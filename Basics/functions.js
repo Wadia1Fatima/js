@@ -40,3 +40,13 @@ function returnSecondValue(getArray){
 }
 console.log(returnSecondValue(myNewArray));
 console.log(returnSecondValue([200, 400, 500, 1000]));
+
+// Immediately Invoked Function Expressions (IIFE)
+(function start(){
+    // named IIFE
+    console.log(`System Started`);
+})();
+// ; is a must when writing consecutive IIFE Functions
+( (system) => {
+    console.log(`Program connected to ${system}`);
+})('WINDOWS');
