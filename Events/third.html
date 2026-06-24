@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>JavaScript aur Main</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = function(){
+        console.log(str, Date.now());       
+    }
+    let intervalId;
+    document.querySelector('#start').addEventListener('click', (e) => {
+        intervalId = setInterval(sayDate, 2000) ;
+        document.querySelector('h1').innerHTML = "Hahahahahahahah :)"
+    });
+    document.querySelector('#stop').addEventListener('click', (e) => {
+        clearInterval(intervalId)
+        document.querySelector('h1').innerHTML = "JavaScript aur Main"
+        intervalId = null;
+    });    
+</script>
+</html>
