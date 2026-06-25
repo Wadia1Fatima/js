@@ -1,6 +1,4 @@
 let myHeros = ["Hulk", "Spiderman"]
-
-
 let heroPower = {
     Hulk: "Great Size & Power",
     Spiderman: "Spidey Powers",
@@ -16,7 +14,7 @@ Array.prototype.array_property = function(){
 }
 heroPower.new_property()
 myHeros.new_property()
-heroPower.array_property()
+// heroPower.array_property() -> error: TypeError
 myHeros.array_property()
 
 // inheritance -> if a protoype or property is assigned to an object then any function, array, string or other object can access it 
